@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>719d7af1-f20e-496c-84e0-614a53d7a79d</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)js\dataservice.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\navigator.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\default.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\detail\detail.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\detail\detail.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\home\home.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\home\home.html" />
+  </ItemGroup>
+</Project>

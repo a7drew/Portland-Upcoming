@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+</head>
+<body>
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Portland Upcoming PADNUG Events</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+
+            <div id="mediumListIconTextTemplate" data-win-control="WinJS.Binding.Template">
+                <div class="listViewItem">
+                    <img data-win-bind="src:firstSpeaker.formattedImageUrl" />
+                    <h2 data-win-bind="innerText:Topic"></h2>
+                    <h3 data-win-bind="innerText:firstSpeaker.Name"></h3>
+                </div>
+            </div> 
+
+            <div id="eventListView"
+                 data-win-control="WinJS.UI.ListView"
+                 data-win-options="{itemTemplate: select('#mediumListIconTextTemplate')}">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
