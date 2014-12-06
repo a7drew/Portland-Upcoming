@@ -5,11 +5,10 @@
 
         ready: function (element, options) {
 
-            DataService.getEvents().then(function (list) {
+            var vm = new PortlandUpcoming.HomeViewModel();
 
-                var bindingList = new WinJS.Binding.List(list);
-                eventListView.winControl.itemDataSource = bindingList.dataSource;
-
+            vm.start().then(function () {
+                WinJS.Binding.processAll(element, vm);
             });
         }
     });

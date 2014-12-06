@@ -13,5 +13,6 @@
     <Content Include="$(MSBuildThisFileDirectory)pages\detail\detail.js" />
     <Content Include="$(MSBuildThisFileDirectory)pages\home\home.js" />
     <Content Include="$(MSBuildThisFileDirectory)pages\home\home.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\home\homeViewModel.js" />
   </ItemGroup>
 </Project>
