@@ -3,21 +3,37 @@
 <head>
     <meta charset="utf-8" />
     <title>detail</title>
-
     <link href="detail.css" rel="stylesheet" />
     <script src="detail.js"></script>
 </head>
 <body>
     <div class="detail fragment">
+
         <header class="page-header" aria-label="Header content" role="banner">
             <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
                 <span class="pagetitle">Event Details</span>
             </h1>
         </header>
+
         <section class="page-section" aria-label="Main content" role="main">
-            <p>Event detail goes here.</p>
+
+            <h2 data-win-bind="innerText:formattedDate"></h2>
+
+            <img data-win-bind="src:firstSpeaker.formattedImageUrl" />
+            <h2 data-win-bind="innerText:Topic"></h2>
+            <h3 data-win-bind="innerText:firstSpeaker.Name"></h3>
+
+            <h2>Description</h2>
+            <p data-win-bind="innerText:Description"></p>
+
+            <h2>Address</h2>
+            <p data-win-bind="innerText:Location.Name"></p>
+            <p data-win-bind="innerText:Location.StreetAddress"></p>
+            <p data-win-bind="innerText:Location.formattedCityStateZipCode">
+
         </section>
+
     </div>
 </body>
 </html>

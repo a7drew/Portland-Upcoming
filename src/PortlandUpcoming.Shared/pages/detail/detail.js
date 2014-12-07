@@ -4,10 +4,9 @@
     "use strict";
 
     WinJS.UI.Pages.define("/pages/detail/detail.html", {
-        // This function is called whenever a user navigates to this page. It
-        // populates the page elements with the app's data.
+
         ready: function (element, options) {
-            // TODO: Initialize the page here.
+            WinJS.Binding.processAll(element, options.item);
         },
 
         unload: function () {
@@ -15,8 +14,6 @@
         },
 
         updateLayout: function (element) {
-            /// <param name="element" domElement="true" />
-
             // TODO: Respond to changes in layout.
         }
     });

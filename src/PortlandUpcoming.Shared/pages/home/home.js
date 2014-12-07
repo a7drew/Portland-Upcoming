@@ -10,6 +10,14 @@
             vm.start().then(function () {
                 WinJS.Binding.processAll(element, vm);
             });
+        },
+
+        unload: function () {
+            // TODO: Respond to navigations away from this page.
+        },
+
+        updateLayout: function (element) {
+            // TODO: Respond to changes in layout.
         }
     });
 })();

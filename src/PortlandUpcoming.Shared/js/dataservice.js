@@ -34,6 +34,14 @@
                         item.firstSpeaker = item.Speakers[0];
                         item.firstSpeaker.formattedImageUrl = 'http://padnug.org' + item.firstSpeaker.ImageUrl;
                     }
+
+                    var d = item.Date.replace(/[^0-9 +]/g, '');
+                    item.formattedDate = new Date(parseInt(d));
+
+                    item.Location.formattedCityStateZipCode =
+                        item.Location.City + ', ' +
+                        item.Location.State + ' ' +
+                        item.Location.ZipCode;
                 }
 
                 return list;
