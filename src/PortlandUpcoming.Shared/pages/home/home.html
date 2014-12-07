@@ -28,8 +28,10 @@
 
             <div id="eventListView"
                  data-win-control="WinJS.UI.ListView"
-                 data-win-options="{itemTemplate: select('#myTemplate')}"
-                 data-win-bind="winControl.itemDataSource : itemDataSource">
+                 data-win-bind="
+                    winControl.itemDataSource:itemDataSource;
+                    winControl.oniteminvoked:itemInvoked"
+                 data-win-options="{itemTemplate: select('#myTemplate')}">
             </div>
 
         </section>
