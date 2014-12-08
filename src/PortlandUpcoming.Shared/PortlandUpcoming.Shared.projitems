@@ -7,6 +7,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)js\dataservice.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\helpers.js" />
     <Content Include="$(MSBuildThisFileDirectory)js\navigator.js" />
     <Content Include="$(MSBuildThisFileDirectory)js\default.js" />
     <Content Include="$(MSBuildThisFileDirectory)pages\detail\detail.html" />

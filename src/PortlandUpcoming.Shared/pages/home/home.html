@@ -20,9 +20,10 @@
 
             <div id="myTemplate" data-win-control="WinJS.Binding.Template">
                 <div class="listViewItem">
+                    <h2 data-win-bind="innerText:formattedDate"></h2>
                     <img data-win-bind="src:firstSpeaker.formattedImageUrl" />
+                    <h2 data-win-bind="innerText:firstSpeaker.Name"></h2>
                     <h2 data-win-bind="innerText:Topic"></h2>
-                    <h3 data-win-bind="innerText:firstSpeaker.Name"></h3>
                 </div>
             </div> 
 
